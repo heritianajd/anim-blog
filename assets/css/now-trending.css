@@ -1,0 +1,140 @@
+
+#now-trending{
+    margin-top: 80px;
+}
+
+.trending-head{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    border-bottom: 1px #D6D6D6 solid;
+}
+
+.trending-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 10%;
+    overflow: hidden;
+}
+
+.trending-row{
+    min-width: 330px;
+    transition: 0.5s;
+}
+
+.trending-picture{
+    width: 100%;
+    height: 254px;
+    object-fit: cover;
+}
+
+.title-now-trending {
+    color: #313131;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.title-now-trending::after{
+    content: '';
+    display: block;
+    width: 0px;
+    margin:  0 8x  0  auto ;
+    height: 2px;
+    background: #313131;
+    transition: width 0.2s ease-out;
+}
+.title-now-trending:hover::after{
+    width: 100%;
+}
+.trending-button{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.btn-trending-slider{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+}
+
+.btn-trending-slider img{
+    width: 30px;
+    height: 30px;
+}
+
+.btn-trending-slider:hover .icone-trending1{
+    display: none;
+}
+
+.icone-trending2{
+    display: none;
+}
+.btn-trending-slider:hover .icone-trending2{
+    display: block;
+}
+
+.trending-row-txt{
+    margin-top: 18px;
+}
+
+.span-fantasy-trending{
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    gap: 13px;
+    margin-bottom: 3px;
+}
+
+.span-fantasy-trending em{
+    font-style: normal;
+    color: #6E6E6E;
+}
+
+.trending-row-txt h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #313131;
+    margin-bottom: 9px;
+}
+
+.trending-row-txt p{
+    font-size: 14px;
+    color: #6E6E6E;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.read-new-trending{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.read-new-trending span{
+    color: #6E6E6E;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.read-full-trending {
+    color: #313131;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.read-full-trending a{
+    text-decoration: none;
+}
+
+@media (max-width:992px) {
+    .trending-container{
+        gap: 5%;
+    }
+}

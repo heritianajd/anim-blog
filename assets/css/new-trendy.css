@@ -1,0 +1,126 @@
+
+#new-trendy{
+    margin-top: 80px;
+}
+
+.newTrendy-container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+.newTrendy-row{
+    display: flex;
+}
+
+.newTrendy-pic{
+    width: 50%;
+}
+
+.newTrendy-pic img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.newTrendy-txt{
+    padding: 70px 82px 80px  82px;
+    width: 50%;
+}
+
+.title-newtrendy {
+    max-width: 90%;
+    margin: auto;
+    border-bottom: #D6D6D6 1px solid;
+}
+.title-newtrendy h3{
+    color: #313131;
+    font-size: 24px;
+    font-weight: 600;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.title-newtrendy h3::after{
+    content: '';
+    display: block;
+    width: 0px;
+    margin:  0 8x  0  auto ;
+    height: 2px;
+    background: #313131;
+    transition: width 0.2s ease-out;
+}
+.title-newtrendy h3:hover::after{
+    width: 100%;
+}
+
+.span-fantasy{
+    color:#4B4B4B;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.span-fantasy em{
+    font-style: normal;
+    color: #6E6E6E;
+}
+
+.newTrendy-txt h4{
+    color: #313131;ont-size: 25.699px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.newTrendy-txt p{
+    color: #6E6E6E;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.read-new span{
+    font-size: 17px;
+    color: #6E6E6E;
+}
+
+.read-full{
+    font-size: 17px;
+    font-weight: 700;
+    color: #313131;
+}
+
+.read-full a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: #313131;
+}
+
+.read-new{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:992px){
+    .newTrendy-txt{
+        padding: 25px 30px 25px 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .newTrendy-row2{
+        flex-direction: column-reverse;
+    }
+    .newTrendy-row1{
+        flex-direction: column;
+    }
+    .newTrendy-txt{
+        width: 100%;
+        padding: 10px 10px 25px 10px;
+    }
+    .newTrendy-pic{
+        width: 100%;
+    }
+}

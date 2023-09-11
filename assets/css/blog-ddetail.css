@@ -1,0 +1,139 @@
+body{
+    background: #FFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title-attack{
+    width: 90%;
+    height: 404px;
+    margin: 0 auto;
+    margin-top: 120px!important;
+    background-image: url(../pictures/loading-page/bg-attack-section.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 34px;
+}
+#title-attack h1{
+    text-align: center;
+    color: #FFF;
+    font-size: 4.2vw;
+    font-weight: 400;
+    letter-spacing: 10.56px;
+}
+
+.star-attack{
+    text-align: center;
+}
+
+.star-attack svg{
+    width: 7vw;
+}
+
+#title-attack .span{
+    color: #FFF;
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 34px;
+    text-align: center; 
+}
+
+#chapiter{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.chapiter-title{
+    border-bottom: #D6D6D6 1px solid;
+}
+.chapiter-title h3{
+    color: black;
+    font-weight: 400;
+    letter-spacing: 7.56px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.chapiter-title h3::after{
+    content: '';
+    display: block;
+    width: 0px;
+    margin:  0 8x 0 auto ;
+    height: 2px;
+    background: #313131;
+    transition: width 0.2s ease-out;
+}
+
+.chapiter-title h3:hover::after{
+    width: 100%;
+}
+
+.chapiter-paragraph{
+    margin: 25px 0 35px 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.next-chapiter{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 7px;
+    border-top: 1px #D6D6D6 solid;
+    gap: 12px;
+}
+
+.btn-next-chapiter{
+    display: flex;
+}
+.btn-next-chapiter img{
+    width: 30px;
+    height: 30px;
+}
+
+.next-chapiter span{
+    font-size: 35px;
+    color: #000;
+}
+
+.comment{
+    margin-top: 40px!important;
+    border-bottom: #D6D6D6 1px solid;
+    margin-bottom: 200px!important;
+    max-width: 90%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.comment h3{
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 7.56px;
+    width: fit-content;
+}
+
+.comment h3::after{
+    content: '';
+    display: block;
+    width: 0px;
+    margin:  0 8x 0 auto ;
+    height: 2px;
+    background: #313131;
+    transition: width 0.2s ease-out;
+}
+
+.comment h3:hover::after{
+    width: 100%;
+}
+
+.sliderblog{
+    transition: 0.5s;
+}
